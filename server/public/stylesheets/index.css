@@ -1,14 +1,10 @@
 html{
-	margin-right: 10%;
-	margin-left: 10%;
-}
-#imageText{
-	display: inline-block;
-	margin-top: 75px;
-	text-align: : right;
+	margin:5%;
 }
 img{
-	display:inline-block;
-	width:300px;
-	height:300px;
+	height: 100%;
+	width: 100%;
+}
+nav{
+	margin-bottom:4400px;
 }
