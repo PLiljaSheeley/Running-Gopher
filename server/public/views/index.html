@@ -13,34 +13,46 @@
   <!-- Jubotron - asks to order now or learn more -->
     <div class = "jumbotron">
      <!-- image background, hidden after a button is pressed-->
-      <div class ="container">
+      <!-- <div class ="container">
         <img src = "../images/runningGopher.jpg">
-      </div>
+      </div> -->
       <button class = "btn btn-success">Order Now</button>
       <button class = "btn btn-warning">Learn More</button>
     </div>
 
       <!-- nav bar -->
-      <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
-        <div class ="container">
-          <ul class="nav nav-pills">
-            <li role="presentation"><a href="#">Running Gopher</a></li>
-            <li role="presentation"><a href="#">About</a></li>
-            <li role="presentation"><a href="#">Pricing</a></li>
-            <li role="presentation"><a href="#">Contact Us</a></li>
-            <li role="presentation"><a href="#">Facebook</a></li>
-          </ul>
-          <ul class ="nav nav-pills navbar-right">
-            <li role="presentation"><a href="#">Number</a></li>
-            <li role="presentation"><a href="#">Delivery Hours</a></li>
-            <li role="presentation"><a href="#">10:00AM - 11:00PM</a></li>
-            <button class="btn btn-success navbar-btn navbar-right" type="submit">Order Now</button>
-          </ul>
-        </div>
-      </nav>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+      <div class ="container">
+        <ul class="nav nav-pills">
+          <li role="presentation"><a href="#">Running Gopher</a></li>
+          <li role="presentation"><a href="#">About</a></li>
+          <li role="presentation"><a href="#">Pricing</a></li>
+          <li role="presentation"><a href="#">Contact Us</a></li>
+          <li role="presentation"><a href="#">Facebook</a></li>
+        </ul>
+
+        <ul class ="nav nav-pills navbar-right">
+          <li role="presentation"><a href="#">Number</a></li>
+          <li role="presentation"><a href="#">Delivery Hours</a></li>
+          <li role="presentation"><a href="#">10:00AM - 11:00PM</a></li>
+          <button class="btn btn-success navbar-btn navbar-right" type="submit">Order Now</button>
+        </ul>
+      </div>
+    </nav>
+
+    <div id = "contentWriting">
+      <p> Running Gopher is a delivery service offered in Elk River MN. Delivery is simple and easy. Call us and tell us what you need and we'll pick up your order right away. We deliver from any restraunt or retailer in town! </p>
+    </div>
 
     <!-- Form for email list -->
-
+    <form>
+      <div class="form-group">
+        <span>Sign up for our email list to recieve exlusive offers and promotions</span><br/>
+        <label>Email address</label>
+        <input type="email" class="form-control" placeholder="Enter email">
+        <small class="form-text text-muted">We'll never share your email with anyone else.</small>
+      </div>
+    </form>
 
   </body>
 </html>
