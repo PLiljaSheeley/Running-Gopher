@@ -12,7 +12,7 @@ app.controller("MainController", ["$scope", "$http", function($scope, $http) {
   };
   $scope.getEmails();
   $scope.add = function(email){
-    $http.post('/add', email).then($scope.getEmails());
+    $http.post('/add', email);
   }
 
 }]);

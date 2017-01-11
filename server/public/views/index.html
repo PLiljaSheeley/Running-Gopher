@@ -10,17 +10,7 @@
   </head>
   <body>
 
-  <!-- Jubotron - asks to order now or learn more -->
-    <div class = "jumbotron">
-<!--       image background, hidden after a button is pressed
- -->      <div class ="container">
-        <img src = "../images/runningGopher.jpg">
-      </div>
-      <button class = "btn btn-success">Order Now</button>
-      <button class = "btn btn-warning">Learn More</button>
-    </div>
-
-      <!-- nav bar -->
+    <!-- nav bar -->
     <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
       <div class ="container">
         <ul class="nav nav-pills">
@@ -29,14 +19,14 @@
           <li role="presentation"><a href="#">Pricing</a></li>
           <li role="presentation"><a href="#">Contact Us</a></li>
           <li role="presentation"><a href="#">Facebook</a></li>
-        </ul>
-
-        <ul class ="nav nav-pills navbar-right">
-          <li role="presentation"><a href="#">Number</a></li>
-          <li role="presentation"><a href="#">Delivery Hours</a></li>
-          <li role="presentation"><a href="#">10:00AM - 11:00PM</a></li>
-          <button class="btn btn-success navbar-btn navbar-right" type="submit">Order Now</button>
-        </ul>
+    <!-- Right side of nav -->
+          <div class ="nav nav-pills navbar-right">
+            <li role="presentation"><a href="#">Number</a></li>
+            <li role="presentation"><a href="#">Delivery Hours</a></li>
+            <li role="presentation"><a href="#">10:00AM - 11:00PM</a></li>
+            <button class="btn btn-success navbar-btn navbar-right" type="submit">Order Now</button>
+          </div>
+        </div>
       </div>
     </nav>
 
@@ -47,10 +37,9 @@
     <!-- Form for email list -->
     <form>
       <div class="form-group">
-        <span>Sign up for our email list to recieve exlusive offers and promotions</span><br/>
         <label>Email address</label>
-        <input type="email" class="form-control" placeholder="Enter email" ng-model = "email">
-        <small class="form-text text-muted">We'll never share your email with anyone else.</small>
+        <input type="email" class="form-control" placeholder="Enter your email" ng-model = "email">
+        <small class="form-text text-muted">Sign up for our email list to recieve exlusive offers and promotions</small>
       </div>
     </form>
 
