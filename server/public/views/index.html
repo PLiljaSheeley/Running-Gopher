@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app = "app">
   <head>
     <meta charset="utf-8">
     <title>Running Gopher</title>
@@ -14,34 +14,140 @@
     <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
       <div class ="container">
         <ul class="nav nav-pills">
-          <li role="presentation"><a href="#">Running Gopher</a></li>
-          <li role="presentation"><a href="#">About</a></li>
-          <li role="presentation"><a href="#">Pricing</a></li>
-          <li role="presentation"><a href="#">Contact Us</a></li>
+          <li role="presentation">
+            <button class = "btn btn-md btn-warning" ng-click = "showOrder()">Running Gopher</button>
+          </li>
+          <li role="presentation">
+            <button class = "btn btn-md btn-warning" ng-click = "showAbout()">About</button>
+          </li>
+          <li role="presentation">
+            <button class = "btn btn-md btn-warning" ng-click = "showPricing()">Pricing</button>
+          </li>
+          <li role="presentation">
+            <button class = "btn btn-md btn-warning" ng-click = "showContact()">Contact Us</button>
+          </li>
           <li role="presentation"><a href="#">Facebook</a></li>
     <!-- Right side of nav -->
           <div class ="nav nav-pills navbar-right">
             <li role="presentation"><a href="#">Number</a></li>
-            <li role="presentation"><a href="#">Delivery Hours</a></li>
-            <li role="presentation"><a href="#">10:00AM - 11:00PM</a></li>
+            <li role="presentation"><a href="#">Delivery Hours: 10:00AM - 11:00PM</a></li>
             <button class="btn btn-success navbar-btn navbar-right" type="submit">Order Now</button>
           </div>
-        </div>
+        </ul>
       </div>
     </nav>
 
-    <div id = "contentWriting">
-      <p> Running Gopher is a delivery service offered in Elk River MN. Delivery is simple and easy. Call us and tell us what you need and we'll pick up your order right away. We deliver from any restraunt or retailer in town! </p>
+
+ <!-- Main content, hidden and shown when buttons are clicked -->
+    <div id = "mainContent" class = "container">
+    <div id = "orderNow" ng-show = "orderHide">
+    <ul>
+      <li>
+        <input type = "radio">Fast food or take-out delivery - $3.50
+      </li>
+      <li>
+        <input type = "radio">Wait in line - $12.00 (Per hour) (60 minute minimum)
+      </li>
+      <li>
+        <input type = "radio">One-way item/package pick up/drop-off in Elk River - $12.50
+      </li>
+      <li>
+        <input type = "radio">Grocery Shopping - $25.00
+      </li>
+      <li>
+        <input type = "radio">Personal Shopping - $25.00 (Per hour)
+      </li>
+      <li>
+        <input type = "radio">Light Household chores - $21.00 (Per hour) (20 minute minimum).
+      </li>
+      <li>
+        <input type = "radio">Dog Walking - $8.00 (20 minute walk)
+      </li>
+      <li>
+        <input type = "radio">Cat Litter - scooping or total clean out (Price varies by service).
+      </li>
+      <li>
+        <input type = "radio">Wait for service personal to arrive at your house $12.00 (Per hour) (60 minute minimum).
+      </li>
+    </ul>
+    <p class = "content">
+    *Any store bought item must be paid for ahead of time or reimbursed upon delivery. There is an additional delivery tax on any delivered taxable items. There are no delivery taxes on orders paid in advance and non-taxable items. 
+    Food will be delivered as soon as it is received, however, temperature and or quality of food is dependant on the restraunt.  Please call the restaurant with any food related issues. </p>
     </div>
+
+    <div id = "about" ng-show = "aboutHide">
+      <p class = "content">Running Gopher is an assistance service provided to the citizens of Elk River, Minnesota - available to help you with your chores, errands or almost anything else you are too busy or otherwise unable to do yourself. 
+      Items, that you are not able to go and get yourself, may be picked up and delivered. If you arrived home from the store and realized you forgot an item or perhaps you are too busy at work to go out and get lunch. Maybe you arrived at work and realized you forgot something important at home. Call Running Gopher to pick up and deliver your items to you. </p>
+      <p class = "disclaimer">Delivery does not inlude alcohol or cigerettes. Services do not include maintenance or repairs.
+    *Limited availability on holidays. There may be limited locations on where to pick up your item(s).</p>
+    </div>
+
+    <div id = "pricing" ng-show = "pricingHide">
+    <p class = "content">
+      <ul>
+        <li>
+          Wait in line - $12.00 per hour (60 minute minimum). - Extreme weather conditions $24.00 per hour (60 minute minimum). 
+        </li>
+        <li>
+          One-way item/package pick up and delivery in Elk River $12.50 - (No billing. Payment on pick up or delivery).
+        </li>
+        <li>
+          Grocery Shopping - Flat fee of $25.00 - will assist with putting groceries away if requested.
+        </li>   
+        <li>
+          Personal Shopping - $25.00 (Per hour)
+        </li>
+        <li>
+          Light Household chores - $21.00 (Per hour) (20 minute minimum).
+        </li>
+        <li>
+          Dog Walking - $8.00 (20 minute walk)
+        </li>
+        <li>
+          Cat Litter - scooping or total clean out (Price varies by service).
+        </li>
+        <li>
+          Wait for service personal to arrive at your house $12.00 (Per hour) (60 minute minimum).
+        </li>
+        <li>
+          Empty house visits -  Quote based on your needs.  Free estimate and walk through.
+        </li>
+        <li>
+          Miscellaneous Errands or services not listed - call 763-276-0416 for a quote.
+        </li>
+      </ul>
+    Delivery 
+    Grocery items may be delivered to your place of work or residence. 
+    $3.50 delivery fee for one grocery item plus the cost of item.
+    
+    $5.00 delivery fee for 2 - 3 grocery items plus the cost of items.
+    
+    $7.00 delivery fee for 4 - 5 grocery items plus the cost of items. 
+    
+    *There is an additional delivery tax on any delivered taxable items. There are no delivery taxes on orders paid in advance and non-taxable items. 
+    
+    Fast food and take out delivery also available.
+    $3.50 delivery fee plus delivery tax* plus cost of food.
+    The food will be delivered as soon as it is received, however, temperature and or quality of food is dependant on the restraunt.  Please call the restaurant with any food related issues.  
+    *There is a delivery tax on any delivered taxable items. There are no delivery taxes on orders paid for in advance and non-taxable items.  </p>
+    </div>
+
+    <div id= "contact" ng-show = "contactHide">
+      <p class = "content">Call or text Running Gopher</p>
+      <p class = "content">Email Running Gopher for help or questions</p> 
+    </div>
+  </div>
 
     <!-- Form for email list -->
     <form>
       <div class="form-group">
+        <span>Sign up for our email list to recieve exlusive offers and promotions</span><br/>
         <label>Email address</label>
-        <input type="email" class="form-control" placeholder="Enter your email" ng-model = "email">
-        <small class="form-text text-muted">Sign up for our email list to recieve exlusive offers and promotions</small>
+        <input type="email" class="form-control" placeholder="Enter email" ng-model = "email">
+        <small class="form-text text-muted">We'll never share your email with anyone else.</small>
       </div>
     </form>
 
   </body>
 </html>
+
