@@ -18,6 +18,7 @@ app.controller("MainController", ["$scope", "$http", function($scope, $http) {
 	  if($scope.contactHide === true){
 	    $scope.contactHide = !$scope.contactHide
 	  }
+	  console.log(orderHide);
 	}
 	$scope.showAbout = function(){
 	  $scope.aboutHide = !$scope.aboutHide;

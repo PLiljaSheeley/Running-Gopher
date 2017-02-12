@@ -4,3 +4,9 @@ a{
 #mainContent{
 	margin-top: 4%;
 }
+input[type="radio"]{
+  margin: 0 1% 0 1%;
+}
+li{
+	list-style-type: none;
+}
