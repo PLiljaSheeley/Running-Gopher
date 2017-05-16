@@ -56,16 +56,16 @@ app.controller("MainController", ["$scope", "$http", function($scope, $http) {
 	    $scope.pricingHide = !$scope.pricingHide
 	  }
 	}
-  // $scope.getEmail = function() {
-  //   $http.get("/email").then(function(response) {
-  //     $scope.email = {};
-  //     $scope.emailArray = response.data;
-  //   });
-  // };
-  // $scope.getEmails();
-  // $scope.add = function(email){
-  //   $http.post('/add', email);
-  // }
+  $scope.getEmail = function() {
+    $http.get("/email").then(function(response) {
+      $scope.email = {};
+      $scope.emailArray = response.data;
+    });
+  };
+  $scope.getEmails();
+  $scope.add = function(email){
+    $http.post('/add', email);
+  }
 
 }]);
 

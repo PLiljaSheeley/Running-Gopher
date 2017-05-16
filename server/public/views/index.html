@@ -39,35 +39,38 @@
  <!-- Main content, hidden and shown when buttons are clicked -->
     <div id = "mainContent" class = "container">
       <div id = "orderNow" ng-show = "orderHide">
-        <ul>
-          <li>
-            <input type = "radio">Fast food or take-out delivery - $3.50
-          </li>
-          <li>
-            <input type = "radio">Wait in line - $12.00 (Per hour) (60 minute minimum)
-          </li>
-          <li>
-            <input type = "radio">One-way item/package pick up/drop-off in Elk River - $12.50
-          </li>
-          <li>
-            <input type = "radio">Grocery Shopping - $25.00
-          </li>
-          <li>
-            <input type = "radio">Personal Shopping - $25.00 (Per hour)
-          </li>
-          <li>
-            <input type = "radio">Light Household chores - $21.00 (Per hour) (20 minute minimum).
-          </li>
-          <li>
-            <input type = "radio">Dog Walking - $8.00 (20 minute walk)
-          </li>
-          <li>
-            <input type = "radio">Cat Litter - scooping or total clean out (Price varies by service).
-          </li>
-          <li>
-            <input type = "radio">Wait for service personal to arrive at your house $12.00 (Per hour) (60 minute minimum).
-          </li>
-        </ul>
+        <form>
+          <ul>
+            <li>
+              <input type = "radio">Fast food or take-out delivery - $3.50
+            </li>
+            <li>
+              <input type = "radio">Wait in line - $12.00 (Per hour) (60 minute minimum)
+            </li>
+            <li>
+              <input type = "radio">One-way item/package pick up/drop-off in Elk River - $12.50
+            </li>
+            <li>
+              <input type = "radio">Grocery Shopping - $25.00
+            </li>
+            <li>
+              <input type = "radio">Personal Shopping - $25.00 (Per hour)
+            </li>
+            <li>
+              <input type = "radio">Light Household chores - $21.00 (Per hour) (20 minute minimum).
+            </li>
+            <li>
+              <input type = "radio">Dog Walking - $8.00 (20 minute walk)
+            </li>
+            <li>
+              <input type = "radio">Cat Litter - scooping or total clean out (Price varies by service).
+            </li>
+            <li>
+              <input type = "radio">Wait for service personal to arrive at your house $12.00 (Per hour) (60 minute minimum).
+            </li>
+              <input type = "submit" value = "Submit">
+          </ul>
+        </form>
         <p class = "content">*Any store bought item must be paid for ahead of time or reimbursed upon delivery. There is an additional delivery tax on any delivered taxable items. There are no delivery taxes on orders paid in advance and non-taxable items. 
         Food will be delivered as soon as it is received, however, temperature and or quality of food is dependant on the restraunt.  Please call the restaurant with any food related issues.</p>
       </div>
@@ -142,6 +145,7 @@
         <input type="email" class="form-control" placeholder="Enter email" ng-model = "email">
         <small class="form-text text-muted">We'll never share your email with anyone else.</small>
       </div>
+      <input type = "submit" value = "Submit">
     </form>
     </div>
   </body>
